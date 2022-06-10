@@ -1,0 +1,11 @@
+npm init -y => package.json
+
+npm i express => framework para api 
+
+npm i nodemon => autoreload
+"Scripts": {
+    "dev": "nodemon index.js",
+
+npm i mysql2 => drive de conexâo com MySQL
+
+npm i sequelize --save => camada de conexâo com MySQL
