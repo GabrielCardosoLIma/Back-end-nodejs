@@ -130,6 +130,12 @@ app.delete("/user/:id", async (req, res) => {
 });
 
 app.post("/login", async (req, res) => {
+    await sleep(3000)
+    function sleep(ms){
+        return new Promise((resolve) => {
+            setTimeout(resolve, ms);
+        })
+    }
     const user = await User.findOne({
         attributes: ['id', 'name', 'email', 'gender', 'password'],
         where: {
